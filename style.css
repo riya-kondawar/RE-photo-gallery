@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#top{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(re.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    width: 100%;
+    min-height: inherit;
+}
+#text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 8vw;
+    /* color: rgba(255, 255, 255, 0.781); */
+    background-color: #853b3b62;
+}
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+    color: rgb(230, 223, 223);
+}
+#textright{
+    align-items: center;
+    width: 50%;
+    display: flex;
+    color: rgba(255, 255, 255, 0.822);
+}
+#textright p{
+    margin-top: 10px;
+    font-size: 12px;
+    width: 40%;
+}
+#icons{
+    color: rgba(255, 255, 255, 0.795);
+}
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+#b1{
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://images.pexels.com/photos/8506360/pexels-photo-8506360.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+#b2{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://images.pexels.com/photos/17944592/pexels-photo-17944592/free-photo-of-black-royal-enfield-hunter-350.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* background-image: url(https://images.unsplash.com/photo-1689600615622-0e6aa9f1a949?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGVuZmllbGR8ZW58MHx8MHx8fDA%3D); */
+    background-size: cover;
+    background-position: 80% 80%;
+}
+#b3{
+    width: 20%;
+    min-height: inherit;
+}
+#b3top{
+    padding: 30px;
+    width: 100%;
+    min-height: 20vh;
+    color: rgba(255, 255, 255, 0.774);
+    background-color: #8b3a3a;
+}
+#b3top p{ 
+    margin-top: 3px;
+    font-size: 10px;
+}
+#b3bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.568);
+    background-image: url(https://images.pexels.com/photos/5363863/pexels-photo-5363863.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: 50% 32%;
+}
+#b4{
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: rgb(160, 154, 154);
+    color: rgba(255, 255, 255, 0.74);
+    /* background-image: ; */
+}
+#b4 h3{
+    font-size: 25px;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    background-color: brown;
+}
+.notf p{
+    width: 86%;
+    font-size: 14px;
+
+}
+
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+         margin-top: 30%;       
+    }
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+    #b1{
+        width: 100%;
+        min-height: 35vh;
+
+    }
+    #b2{
+        width: 100%;
+        min-height: 50vh;
+
+    }
+    #b3{
+        width: 100%;
+    }
+    #b3bottom{
+        min-height: 40vh;
+    }
+    #b4{
+        width: 100%;
+    }
+
+
+
+}
+
+
+
